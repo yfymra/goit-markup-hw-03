@@ -75,10 +75,12 @@ ul {
 
 .page-header > .container {
    display: flex;
+   flex-wrap: wrap;
 }
 
 .site-nav {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -98,12 +100,13 @@ ul {
     color: var(--primary-brand);
 }
 .nav-list {
-    margin-left: 77px;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 77px;
 }
 
 .nav-list > .item:not(:first-child),
-.contact-list >.item:not(:first-child) {
+.contact-list > .item:not(:first-child) {
     margin-left: 40px;
 }
 
@@ -122,8 +125,9 @@ ul {
 }
 
 .contact-list {
-    margin-left: auto;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
 }
 
 .contact-list .link {
@@ -135,6 +139,15 @@ ul {
     color: var(--primary-brand);
 }
 
+.hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
+
+    background-color: var(--dark);
+
+    text-align: center;
+}
+
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -142,15 +155,6 @@ ul {
 
 .section:nth-child(2) {
     padding-bottom: 0;
-}
-
-.hero {
-    padding-top: 192px;
-    padding-bottom: 192px;
-
-    background-color: var(--dark);
-    
-    text-align: center;
 }
 
 .hero-title {
@@ -224,8 +228,6 @@ ul {
 }
 
 .team-section {
-    margin-bottom: 0;
-
     background-color: var(--light);
 }
 
@@ -256,23 +258,19 @@ ul {
 }
 
 .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 72px;
 }
 
-.filter-list >.item {
+.filter-list > .item:not(:first-child) {
     margin-left: var(--list-left-gap);
-}
-
-.portfolio-list > .item {
-    flex-basis: calc(100%/3 - var(--list-left-gap));
-    margin-left: var(--list-left-gap);
-    margin-bottom: 48px;
-    border-bottom: 0.5px solid var(--light);
 }
 
 .filter-btn {
-    display: flex;
-    flex-basis: calc(100%/5 - var(--list-left-gap));
+    /*display: flex;*/
+    /*flex-basis: calc(100%/5 - var(--list-left-gap));*/
     border: 1px solid var(--accent);
     border-radius: 4px;
     padding: 12px 24px;
@@ -291,6 +289,13 @@ ul {
 .filter-btn:focus {
     background-color: var(--primary-brand);
     color: var(--color-accent);
+}
+
+.portfolio-list>.item {
+    flex-basis: calc(100%/3 - var(--list-left-gap));
+    margin-left: var(--list-left-gap);
+    margin-bottom: 48px;
+    border-bottom: 0.5px solid var(--light);
 }
 
 .portfolio-link > .item-content {
