@@ -15,7 +15,7 @@
     --line-height-main: 1.5;
     --line-height-title: 1.11;
     --line-height-medium: 1.2;
-    --list-left-gap: 30px;
+    --list-left-gap: 24px;
 }
 
 body {
@@ -39,9 +39,9 @@ ul {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 1152px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 12px;
 }
 
 .link {
@@ -66,8 +66,6 @@ ul {
 }
 
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 4px solid;
     border-radius: 2px;
     border-color: transparent;
@@ -93,6 +91,10 @@ ul {
 }
 
 .logo-header {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--dark);
 }
 
@@ -111,6 +113,10 @@ ul {
 }
 
 .nav-list .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-weight: var(--font-weight-medium);
     color: var(--dark);
 }
@@ -131,6 +137,10 @@ ul {
 }
 
 .contact-list .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--body-text);
 }
 
@@ -289,15 +299,17 @@ ul {
     color: var(--color-accent);
 }
 
-.portfolio-list>.item {
+.portfolio-list > .item {
     flex-basis: calc(100%/3 - var(--list-left-gap));
     margin-left: var(--list-left-gap);
     margin-bottom: 48px;
-    border-bottom: 0.5px solid var(--light);
 }
 
 .portfolio-link > .item-content {
     text-align: left;
+    border-right: 0.5px solid var(--light);
+    border-bottom: 0.5px solid var(--light);
+    border-left: 0.5px solid var(--light);
 }
 
 .portfolio-link .text {
