@@ -39,9 +39,9 @@ ul {
 }
 
 .container {
-    max-width: 1152px;
+    max-width: 1158px;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 15px;
 }
 
 .link {
@@ -222,28 +222,19 @@ ul {
 
 .list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-left: calc(-1 * var(--gap));
+}
+
+.list > .item:not(:first-child) {
+    margin-left: var(--gap);
 }
 
 .features-list > .item {
-    flex-basis: calc(100%/4 - var(--gap));
-    margin-left: var(--gap);
-}
-
-.doings-list > .item {
-    flex-basis: calc(100%/3 - var(--gap));
-    margin-left: var(--gap);
+    min-width: 264px;
 }
 
 .team-section {
     background-color: var(--light);
-}
-
-.team-list > .item {
-    flex-basis: calc(100%/4 - var(--gap));
-    margin-left: var(--gap);
 }
 
 .item-content {
@@ -256,7 +247,8 @@ ul {
     background-color: var(--color-accent);
 }
 
-.item-content > .title {
+.item-content > .title,
+.features-list .title {
     margin-bottom: 8px;
 
     font-size: var(--font-size-medium);
@@ -297,6 +289,13 @@ ul {
 .filter-btn:focus {
     background-color: var(--primary-brand);
     color: var(--color-accent);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc(-1 * var(--gap));
 }
 
 .portfolio-list > .item {
