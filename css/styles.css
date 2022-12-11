@@ -269,8 +269,6 @@ ul {
 }
 
 .filter-btn {
-    /*display: flex;*/
-    /*flex-basis: calc(100%/5 - var(--list-left-gap));*/
     border: 1px solid var(--accent);
     border-radius: 4px;
     padding: 12px 24px;
