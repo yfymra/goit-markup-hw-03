@@ -15,7 +15,7 @@
     --line-height-main: 1.5;
     --line-height-title: 1.11;
     --line-height-medium: 1.2;
-    --list-left-gap: 24px;
+    --gap: 24px;
 }
 
 body {
@@ -92,8 +92,8 @@ ul {
 
 .logo-header {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
 
     color: var(--dark);
 }
@@ -114,8 +114,8 @@ ul {
 
 .nav-list .link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
 
     font-weight: var(--font-weight-medium);
     color: var(--dark);
@@ -138,8 +138,8 @@ ul {
 
 .contact-list .link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
 
     color: var(--body-text);
 }
@@ -224,17 +224,17 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: calc(-1 * var(--list-left-gap));
+    margin-left: calc(-1 * var(--gap));
 }
 
 .features-list > .item {
-    flex-basis: calc(100%/4 - var(--list-left-gap));
-    margin-left: var(--list-left-gap);
+    flex-basis: calc(100%/4 - var(--gap));
+    margin-left: var(--gap);
 }
 
 .doings-list > .item {
-    flex-basis: calc(100%/3 - var(--list-left-gap));
-    margin-left: var(--list-left-gap);
+    flex-basis: calc(100%/3 - var(--gap));
+    margin-left: var(--gap);
 }
 
 .team-section {
@@ -242,8 +242,8 @@ ul {
 }
 
 .team-list > .item {
-    flex-basis: calc(100%/4 - var(--list-left-gap));
-    margin-left: var(--list-left-gap);
+    flex-basis: calc(100%/4 - var(--gap));
+    margin-left: var(--gap);
 }
 
 .item-content {
@@ -275,7 +275,7 @@ ul {
 }
 
 .filter-list > .item:not(:first-child) {
-    margin-left: var(--list-left-gap);
+    margin-left: var(--gap);
 }
 
 .filter-btn {
@@ -300,8 +300,8 @@ ul {
 }
 
 .portfolio-list > .item {
-    flex-basis: calc(100%/3 - var(--list-left-gap));
-    margin-left: var(--list-left-gap);
+    flex-basis: calc(100%/3 - var(--gap));
+    margin-left: var(--gap);
     margin-bottom: 48px;
 }
 
